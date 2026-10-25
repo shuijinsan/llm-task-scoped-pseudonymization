@@ -1,0 +1,50 @@
+{
+  "deterministic_baseline": {
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "tp": 5,
+    "tn": 20,
+    "fp": 0,
+    "fn": 0
+  },
+  "raw": {
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "tp": 5,
+    "tn": 20,
+    "fp": 0,
+    "fn": 0
+  },
+  "redaction": {
+    "accuracy": 0.68,
+    "f1": 0.43,
+    "tp": 3,
+    "tn": 14,
+    "fp": 6,
+    "fn": 2
+  },
+  "global_hmac": {
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "tp": 5,
+    "tn": 20,
+    "fp": 0,
+    "fn": 0
+  },
+  "scoped_hmac": {
+    "accuracy": 0.8,
+    "f1": 0.0,
+    "tp": 0,
+    "tn": 20,
+    "fp": 0,
+    "fn": 5
+  },
+  "task_scoped": {
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "tp": 5,
+    "tn": 20,
+    "fp": 0,
+    "fn": 0
+  }
+}
