@@ -1,0 +1,5 @@
+# Python 3.10+; the evaluation run used a local Python 3.12 environment.
+openai>=1.40,<4
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+scipy>=1.11,<2

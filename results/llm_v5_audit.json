@@ -1,0 +1,24 @@
+{
+  "model_requested": "deepseek-chat",
+  "models_reported": {
+    "deepseek-flash": 500
+  },
+  "records": 500,
+  "unique_pairs": 100,
+  "status_counts": {
+    "raw:ok": 100,
+    "redaction:ok": 100,
+    "global_hmac:ok": 100,
+    "scoped_hmac:ok": 100,
+    "task_scoped:ok": 100
+  },
+  "paired_global_vs_task": {
+    "global_wrong_task_right": 4,
+    "task_wrong_global_right": 2,
+    "both_wrong": 5,
+    "both_right": 89,
+    "exact_mcnemar_p_two_sided": 0.6875,
+    "note": "Exploratory only: alert pairs overlap and are not independent; this p-value is NOT confirmatory."
+  },
+  "sha256_predictions": "1838157aeb559a1fc5b31233ed2fee926e7c414bdc2bb2764daeb18b860a1fc4"
+}

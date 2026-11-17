@@ -1,0 +1,108 @@
+{
+  "experiment": "scope-level token equality verification (NOT comprehensive reidentification privacy)",
+  "implementation": "scripts/pseudonymizer.py::Pseudonymizer._token",
+  "data_file": "russellmitchell_wazuh.json",
+  "time_range": [
+    1642993260.0,
+    1642999093.0
+  ],
+  "window_sec": 1800,
+  "usable_alerts_with_valid_ipv4": 7826,
+  "distinct_assets": 10,
+  "observed_windows": 4,
+  "independent_task_ids": 12,
+  "key_material": "read from .secrets/hmac.key; NEVER exported",
+  "per_mode": {
+    "raw": {
+      "same_asset_same_task_cross_window": {
+        "comparisons": 720,
+        "equal": 720,
+        "equality_rate": 1.0
+      },
+      "same_asset_cross_task_same_window": {
+        "comparisons": 2640,
+        "equal": 2640,
+        "equality_rate": 1.0
+      },
+      "different_asset_same_task_same_window": {
+        "comparisons": 2160,
+        "equal": 0,
+        "equality_rate": 0.0
+      }
+    },
+    "redaction": {
+      "same_asset_same_task_cross_window": {
+        "comparisons": 720,
+        "equal": 720,
+        "equality_rate": 1.0
+      },
+      "same_asset_cross_task_same_window": {
+        "comparisons": 2640,
+        "equal": 2640,
+        "equality_rate": 1.0
+      },
+      "different_asset_same_task_same_window": {
+        "comparisons": 2160,
+        "equal": 2160,
+        "equality_rate": 1.0
+      }
+    },
+    "global_hmac": {
+      "same_asset_same_task_cross_window": {
+        "comparisons": 720,
+        "equal": 720,
+        "equality_rate": 1.0
+      },
+      "same_asset_cross_task_same_window": {
+        "comparisons": 2640,
+        "equal": 2640,
+        "equality_rate": 1.0
+      },
+      "different_asset_same_task_same_window": {
+        "comparisons": 2160,
+        "equal": 0,
+        "equality_rate": 0.0
+      }
+    },
+    "scoped_hmac": {
+      "same_asset_same_task_cross_window": {
+        "comparisons": 720,
+        "equal": 0,
+        "equality_rate": 0.0
+      },
+      "same_asset_cross_task_same_window": {
+        "comparisons": 2640,
+        "equal": 2640,
+        "equality_rate": 1.0
+      },
+      "different_asset_same_task_same_window": {
+        "comparisons": 2160,
+        "equal": 0,
+        "equality_rate": 0.0
+      }
+    },
+    "task_scoped": {
+      "same_asset_same_task_cross_window": {
+        "comparisons": 720,
+        "equal": 720,
+        "equality_rate": 1.0
+      },
+      "same_asset_cross_task_same_window": {
+        "comparisons": 2640,
+        "equal": 0,
+        "equality_rate": 0.0
+      },
+      "different_asset_same_task_same_window": {
+        "comparisons": 2160,
+        "equal": 0,
+        "equality_rate": 0.0
+      }
+    }
+  },
+  "limitations": [
+    "This test only measures direct equality of IP identifier tokens.",
+    "No claim about full-log leakage, indirect inference, or reidentification risk.",
+    "HMAC collision absence in finite sample is not a probabilistic security proof.",
+    "Time-scoped comparison holds the time window constant across task IDs."
+  ]
+}

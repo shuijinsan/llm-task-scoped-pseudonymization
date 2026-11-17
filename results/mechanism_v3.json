@@ -1,0 +1,92 @@
+{
+  "experiment": "deterministic identifier equality (NOT LLM results)",
+  "source_pair_count": 100,
+  "pairs_sha256": "1a7164f1353a879e3ccd836b4f27fbe6a8f518d21672850d49a1f402417c723a",
+  "window_sec": 1800,
+  "key_material": "local file only; not exported",
+  "method_note": "No confidence intervals: pairs share 10 source assets and are correlated.",
+  "modes": {
+    "raw": {
+      "n": 100,
+      "TP": 50,
+      "TN": 50,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "accuracy": 1.0
+    },
+    "redaction": {
+      "n": 100,
+      "TP": 50,
+      "TN": 0,
+      "FP": 50,
+      "FN": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.666667,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.5
+    },
+    "global_hmac": {
+      "n": 100,
+      "TP": 50,
+      "TN": 50,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "accuracy": 1.0
+    },
+    "scoped_hmac": {
+      "n": 100,
+      "TP": 0,
+      "TN": 50,
+      "FP": 0,
+      "FN": 50,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "balanced_accuracy": 0.5,
+      "accuracy": 0.5
+    },
+    "task_scoped": {
+      "n": 100,
+      "TP": 50,
+      "TN": 50,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "balanced_accuracy": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "single_token_probe": {
+    "raw": {
+      "same_ip_token_equal_across_tasks": true,
+      "same_ip_token_equal_across_windows": true
+    },
+    "redaction": {
+      "same_ip_token_equal_across_tasks": true,
+      "same_ip_token_equal_across_windows": true
+    },
+    "global_hmac": {
+      "same_ip_token_equal_across_tasks": true,
+      "same_ip_token_equal_across_windows": true
+    },
+    "scoped_hmac": {
+      "same_ip_token_equal_across_tasks": true,
+      "same_ip_token_equal_across_windows": false
+    },
+    "task_scoped": {
+      "same_ip_token_equal_across_tasks": false,
+      "same_ip_token_equal_across_windows": true
+    }
+  }
+}

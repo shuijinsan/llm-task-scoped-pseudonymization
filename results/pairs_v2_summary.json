@@ -1,0 +1,29 @@
+{
+  "dataset": "russellmitchell_wazuh.json",
+  "time_range": [
+    1642993260.0,
+    1642999093.0
+  ],
+  "window_sec": 1800,
+  "seed": 42,
+  "target_positive_pairs_per_eligible_asset": 10,
+  "usable_wazuh_logs": 7826,
+  "eligible_assets": 5,
+  "positive_pairs": 50,
+  "negative_pairs": 50,
+  "total_pairs": 100,
+  "positive_per_asset": {
+    "10.143.2.4": 10,
+    "172.19.130.4": 10,
+    "172.19.131.174": 10,
+    "192.168.231.164": 10,
+    "192.168.231.56": 10
+  },
+  "skipped_eligible_assets_no_matched_negative": [],
+  "paired_design": "Each matched P/N uses the same anchor log; P and N targets share the same 30-minute time window.",
+  "units_of_inference": "Only 10 assets in a single scenario; alert pairs are correlated. Do not treat pair count as independent subjects.",
+  "source_counters": {
+    "nonempty_rows": 41488
+  },
+  "output_sha256": "1a7164f1353a879e3ccd836b4f27fbe6a8f518d21672850d49a1f402417c723a"
+}

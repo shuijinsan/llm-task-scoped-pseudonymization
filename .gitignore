@@ -1,5 +1,37 @@
-.secrets/
-data/
-__pycache__/
-*.pyc
+# Local environments and credentials
 .venv/
+.venv-win/
+.venv*/
+venv/
+.env
+.env.*
+.secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Source datasets are downloaded separately; do not commit raw alert logs.
+data/
+
+# Preserve only summary outputs and manuscript figures in the public repository.
+# Raw alert pairs and raw model predictions remain local.
+results/**
+!results/dataset_audit.json
+!results/pairs_v2_summary.json
+!results/mechanism_v3.json
+!results/llm_v4_full_metrics.json
+!results/llm_v5_audit.json
+!results/privacy_v6.json
+!results/figures/
+!results/figures/**
+
+# Common editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

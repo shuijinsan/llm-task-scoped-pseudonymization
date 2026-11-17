@@ -1,0 +1,39 @@
+{
+  "dataset": "russellmitchell_wazuh.json",
+  "scope": {
+    "start_epoch": 1642993260.0,
+    "end_epoch": 1642999093.0,
+    "window_seconds": 1800
+  },
+  "raw_nonempty_lines": 41488,
+  "invalid_json": 0,
+  "missing_timestamp": 0,
+  "invalid_timestamp": 0,
+  "outside_original_time_range": 33662,
+  "missing_asset_ip_in_range": 0,
+  "usable_wazuh_alerts_in_range": 7826,
+  "unique_asset_ips_in_range": 10,
+  "time_span_epoch": [
+    1642994714.0,
+    1642999086.0
+  ],
+  "asset_count_with_two_or_more_windows": 5,
+  "unique_windows_in_range": 4,
+  "cross_window_positive_pair_candidates_total": 46132,
+  "asset_alert_count_distribution": {
+    "6": 2,
+    "1": 2,
+    "40": 1,
+    "7646": 1,
+    "15": 1,
+    "61": 1,
+    "37": 1,
+    "13": 1
+  },
+  "asset_window_count_distribution": {
+    "1": 5,
+    "2": 3,
+    "3": 2
+  },
+  "notes": "Pair candidates are combinatorial, not statistically independent; no pair samples were generated."
+}

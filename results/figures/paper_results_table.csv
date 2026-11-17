@@ -1,0 +1,6 @@
+﻿method,LLM_F1,LLM_BA,deterministic_F1,within_task_cross_window_token_equality,cross_task_same_window_token_equality,different_asset_same_task_token_equality
+Raw,1.0,1.0,1.0,1.0,1.0,0.0
+Redaction,0.214286,0.56,0.666667,1.0,1.0,1.0
+Global-HMAC,0.901099,0.91,1.0,1.0,1.0,0.0
+Time-Scoped,0.0,0.5,0.0,0.0,1.0,0.0
+Task-Scoped,0.924731,0.93,1.0,1.0,0.0,0.0
